@@ -346,3 +346,6 @@ Ralph Session Started: Sun Feb 22 16:30:55 AEDT 2026
 [16:31:05] 🟢 READ /Users/kahowang/projects/digibox-ralph/RALPH_TASK.md (420 lines, ~41.0KB)
 [16:31:06] 🟢 READ /Users/kahowang/projects/digibox-ralph/.ralph/progress.md (147 lines, ~14.3KB)
 [16:31:17] 🟢 SHELL npm run build → exit 0
+[16:31:23] 🟢 ✅ Agent signaled COMPLETE
+[16:31:23] 🟢 SESSION END: 22297ms, ~15161 tokens used
+[16:31:23] 🟢 TOKENS: 15161 / 80000 (18%) [read:55KB write:0KB assist:0KB shell:0KB]

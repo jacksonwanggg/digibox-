@@ -4,158 +4,54 @@
 
 ## Summary
 
-- Iterations completed: 2
-- Current status: COMPLETE - All 17 criteria met
+- Iterations completed: 3
+- Current status: COMPLETE - All 22 criteria met
 
-## How This Works
+## What Was Done (Iteration 3 - DigiSoc Website v2)
 
-Progress is tracked in THIS FILE, not in LLM context.
-When context is rotated (fresh agent), the new agent reads this file.
-This is how Ralph maintains continuity across iterations.
+### Theme System (Criteria 1-4)
+- Rewrote index.css with light/dark CSS variable system
+- Light mode as default (`data-theme="light"` on `<html>`)
+- Created `useTheme` hook (localStorage persistence, `data-theme` attribute toggle)
+- Created `ThemeToggle` component (sun/moon icon button)
+- All CSS uses theme-aware CSS variables — no hardcoded colors
+- 300ms ease transitions on body, navbar, mouse glow
 
-## Session History
+### Image-Centric Layout (Criteria 5, 8, 9)
+- Hero section: full-width gradient photo placeholder with Ken Burns animation, overlay text, DigiSoc logo, CTAs, and Rubric badge
+- Created reusable `ImagePlaceholder` component (dashed border box with camera icon + label)
+- Created `Gallery` section on home page with 6 photo placeholders
+- Event cards include image placeholders at the top
 
+### Logo & Branding (Criteria 6, 7)
+- DigiSoc logo (`digisocLogo.jpeg`) in navbar (36x36px), hero (80x80px), footer, and as favicon
+- Rubric logo (`rubric logo.png`) displayed next to all Rubric links in hero, events, footer, contact
 
-### 2026-02-22 15:44:31
-**Session 1 started** (model: opus-4.6-thinking)
+### Exec Carousel (Criteria 10, 11)
+- Created `ExecCarousel` component with CSS scroll snap + mouse drag
+- Arrow buttons on desktop (hidden on mobile)
+- Dot position indicator below carousel
+- Cards are 280px wide with 1.5rem gap
+- Partial cards visible at edges to hint scrollability
 
-### 2026-02-22 15:44:37
-**Session 1 ended** - Agent finished naturally (10 criteria remaining)
+### Team Data (Criterion 12)
+- Expanded to 10 executives per spec
 
-### 2026-02-22 15:44:39
-**Session 2 started** (model: opus-4.6-thinking)
+### Rubric Links (Criterion 13)
+- Rubric URL in hero (badge/CTA), all event cards, footer Connect section, and contact page
 
-### 2026-02-22 15:44:42
-**Session 2 ended** - Agent finished naturally (10 criteria remaining)
+### Footer (Criterion 14)
+- Copyright notice "© DigiSoc 2026. All rights reserved." at bottom with border-top separator
 
-### 2026-02-22 15:44:44
-**Session 3 started** (model: opus-4.6-thinking)
+### Animations (Criteria 15-18)
+- Floating shapes burst on first page load (20 shapes, sessionStorage flag, removed after 2.2s)
+- Star/sparkle trail on mouse move (desktop only, throttled 40ms, 600ms lifetime)
+- Navbar slide-down + hero fade-up entry stagger animations
+- All existing animations preserved: MouseGlow, card tilt (useTilt), MagneticButton, ScrollReveal, StarField, FloatingOrbs
+- Animations adjusted for both themes via CSS variables
 
-### 2026-02-22 15:44:48
-**Session 3 ended** - Agent finished naturally (10 criteria remaining)
-
-### 2026-02-22 15:44:50
-**Session 4 started** (model: opus-4.6-thinking)
-
-### 2026-02-22 15:44:53
-**Session 4 ended** - Agent finished naturally (10 criteria remaining)
-
-### 2026-02-22 15:44:55
-**Session 5 started** (model: opus-4.6-thinking)
-
-### 2026-02-22 15:44:58
-**Session 5 ended** - Agent finished naturally (10 criteria remaining)
-
-### 2026-02-22 15:45:00
-**Session 6 started** (model: opus-4.6-thinking)
-
-### 2026-02-22 15:45:04
-**Session 6 ended** - Agent finished naturally (10 criteria remaining)
-
-### 2026-02-22 15:45:06
-**Session 7 started** (model: opus-4.6-thinking)
-
-### 2026-02-22 15:45:09
-**Session 7 ended** - Agent finished naturally (10 criteria remaining)
-
-### 2026-02-22 15:45:11
-**Session 8 started** (model: opus-4.6-thinking)
-
-### 2026-02-22 15:45:14
-**Session 8 ended** - Agent finished naturally (10 criteria remaining)
-
-### 2026-02-22 15:45:16
-**Session 9 started** (model: opus-4.6-thinking)
-
-### 2026-02-22 15:45:20
-**Session 9 ended** - Agent finished naturally (10 criteria remaining)
-
-### 2026-02-22 15:45:22
-**Session 10 started** (model: opus-4.6-thinking)
-
-### 2026-02-22 15:45:25
-**Session 10 ended** - Agent finished naturally (10 criteria remaining)
-
-### 2026-02-22 15:45:27
-**Session 11 started** (model: opus-4.6-thinking)
-
-### 2026-02-22 15:45:31
-**Session 11 ended** - Agent finished naturally (10 criteria remaining)
-
-### 2026-02-22 15:45:33
-**Session 12 started** (model: opus-4.6-thinking)
-
-### 2026-02-22 15:46:13
-**Session 1 started** (model: opus-4.5-thinking)
-
-### 2026-02-22 15:46:16
-**Session 1 ended** - Agent finished naturally (10 criteria remaining)
-
-### 2026-02-22 15:46:19
-**Session 2 started** (model: opus-4.5-thinking)
-
-### 2026-02-22 15:46:22
-**Session 2 ended** - Agent finished naturally (10 criteria remaining)
-
-### 2026-02-22 15:46:24
-**Session 3 started** (model: opus-4.5-thinking)
-
-### 2026-02-22 15:46:27
-**Session 3 ended** - Agent finished naturally (10 criteria remaining)
-
-### 2026-02-22 15:46:29
-**Session 4 started** (model: opus-4.5-thinking)
-
-### 2026-02-22 15:46:32
-**Session 4 ended** - Agent finished naturally (10 criteria remaining)
-
-### 2026-02-22 15:46:34
-**Session 5 started** (model: opus-4.5-thinking)
-
-### 2026-02-22 15:46:38
-**Session 5 ended** - Agent finished naturally (10 criteria remaining)
-
-### 2026-02-22 15:46:40
-**Session 6 started** (model: opus-4.5-thinking)
-
-### 2026-02-22 15:48:14
-**Session 1 started** (model: opus-4.6-thinking)
-
-### 2026-02-22 15:53:21
-**Session 1 ended** - ✅ TASK COMPLETE
-
-### 2026-02-22 16:00:53
-**Session 1 started** (model: opus-4.6-thinking)
-
-### 2026-02-22 16:07:30
-**Session 1 ended** - ✅ TASK COMPLETE
-
-### 2026-02-22 16:22:30
-**Session 1 started** (model: opus-4.6-thinking)
-
-### Session 1 — COMPLETE
-All 22 criteria implemented:
-- Full light/dark theme system with CSS variables, localStorage, data-theme toggling
-- ImagePlaceholder, ExecCarousel, Gallery, EntranceAnimation, StarTrail components
-- DigiSoc logo in navbar/footer/favicon, Rubric logo next to all Rubric links
-- Hero with group photo placeholder, overlay, Ken Burns animation
-- Exec carousel: drag, touch, scroll snap, arrows, dot indicators, 10 team members
-- Gallery section with 6 photo placeholders on home page
-- Rubric links in hero, events, footer, contact
-- Footer copyright "© DigiSoc 2026"
-- Floating shapes burst on first load, star sparkle trail on mouse
-- Entry stagger animations (navbar slide, hero fade)
-- All existing animations preserved and theme-aware
-- Responsive design, prefers-reduced-motion, no any types, build passes
-
-### 2026-02-22 16:23:20
-**Session 1 ended** - 🔄 Context rotation (token limit reached)
-
-### 2026-02-22 16:23:22
-**Session 2 started** (model: opus-4.6-thinking)
-
-### 2026-02-22 16:30:53
-**Session 2 ended** - 🔄 Context rotation (token limit reached)
-
-### 2026-02-22 16:30:55
-**Session 3 started** (model: opus-4.6-thinking)
+### Responsive & Accessibility (Criteria 19-22)
+- Mobile responsive: hamburger menu with theme toggle, carousel touch swipe, gallery grid columns adjust
+- `prefers-reduced-motion` respected in CSS and JS
+- `npm run build` passes with zero TypeScript errors
+- No `any` types in any new code
