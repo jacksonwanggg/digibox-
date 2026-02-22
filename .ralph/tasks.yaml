@@ -3,126 +3,161 @@
 # DO NOT EDIT - regenerated on task file change
 
 source_file: RALPH_TASK.md
-source_mtime: 1771736819
-generated_at: 2026-02-22T05:07:30Z
+source_mtime: 1771737671
+generated_at: 2026-02-22T05:23:19Z
 
 tasks:
-  - id: "line_184"
-    line_number: 184
-    status: completed
+  - id: "line_371"
+    line_number: 371
+    status: pending
     parallel_group: 999999
-    description: Color palette updated to DigiSoc purple/space theme across all CSS variables
+    description: Light mode is the default — pure white backgrounds with `#6C5CE7` purple accents
     indent_level: 0
     raw_marker: 1.
-  - id: "line_185"
-    line_number: 185
-    status: completed
+  - id: "line_372"
+    line_number: 372
+    status: pending
     parallel_group: 999999
-    description: Gradient backgrounds updated (hero, page headers, CTA sections)
+    description: Dark mode toggle works — stored in localStorage, toggles `data-theme` on `<html>`
     indent_level: 0
     raw_marker: 2.
-  - id: "line_186"
-    line_number: 186
-    status: completed
+  - id: "line_373"
+    line_number: 373
+    status: pending
     parallel_group: 999999
-    description: Mouse glow follower works smoothly across the site
+    description: All CSS refactored to use theme-aware CSS variables (no hardcoded colors)
     indent_level: 0
     raw_marker: 3.
-  - id: "line_187"
-    line_number: 187
-    status: completed
+  - id: "line_374"
+    line_number: 374
+    status: pending
     parallel_group: 999999
-    description: Hero section has mouse-driven parallax on background elements
+    description: Smooth 300ms transition between light and dark mode
     indent_level: 0
     raw_marker: 4.
-  - id: "line_188"
-    line_number: 188
-    status: completed
+  - id: "line_375"
+    line_number: 375
+    status: pending
     parallel_group: 999999
-    description: Cards have 3D tilt effect on hover with shine overlay
+    description: Hero section shows full-width group photo placeholder with overlay text and CTAs
     indent_level: 0
     raw_marker: 5.
-  - id: "line_189"
-    line_number: 189
-    status: completed
+  - id: "line_376"
+    line_number: 376
+    status: pending
     parallel_group: 999999
-    description: CTA buttons have magnetic hover effect
+    description: DigiSoc logo (`digisocLogo.jpeg`) used in navbar, footer, and as favicon
     indent_level: 0
     raw_marker: 6.
-  - id: "line_190"
-    line_number: 190
-    status: completed
+  - id: "line_377"
+    line_number: 377
+    status: pending
     parallel_group: 999999
-    description: Star particles float in hero and footer backgrounds
+    description: Rubric logo (`rubric logo.png`) displayed as icon next to all Rubric links (hero, events, footer, contact)
     indent_level: 0
     raw_marker: 7.
-  - id: "line_191"
-    line_number: 191
-    status: completed
+  - id: "line_378"
+    line_number: 378
+    status: pending
     parallel_group: 999999
-    description: Floating orbs animate in hero section
+    description: `ImagePlaceholder` component used throughout for future photo slots
     indent_level: 0
     raw_marker: 8.
-  - id: "line_192"
-    line_number: 192
-    status: completed
+  - id: "line_379"
+    line_number: 379
+    status: pending
     parallel_group: 999999
-    description: All content fades in on scroll with staggered timing
+    description: Home page has a gallery section with 4–6 photo placeholders
     indent_level: 0
     raw_marker: 9.
-  - id: "line_193"
-    line_number: 193
-    status: completed
+  - id: "line_380"
+    line_number: 380
+    status: pending
     parallel_group: 999999
-    description: Cards have animated gradient border shimmer
+    description: Exec carousel is horizontally swipeable (drag on desktop, touch on mobile)
     indent_level: 0
     raw_marker: 10.
-  - id: "line_194"
-    line_number: 194
-    status: completed
+  - id: "line_381"
+    line_number: 381
+    status: pending
     parallel_group: 999999
-    description: Navbar has proper frosted glass with scroll-aware darkening
+    description: Exec carousel has scroll snap, arrow buttons (desktop), and position indicator
     indent_level: 0
     raw_marker: 11.
-  - id: "line_195"
-    line_number: 195
-    status: completed
+  - id: "line_382"
+    line_number: 382
+    status: pending
     parallel_group: 999999
-    description: All animations use GPU-composited properties only (transform/opacity)
+    description: Team data expanded to 10 executives
     indent_level: 0
     raw_marker: 12.
-  - id: "line_196"
-    line_number: 196
-    status: completed
+  - id: "line_383"
+    line_number: 383
+    status: pending
     parallel_group: 999999
-    description: Mouse effects disabled on touch/mobile devices
+    description: Rubric link (`https://campus.hellorubric.com/?s=6334`) in hero, events, footer, and contact page
     indent_level: 0
     raw_marker: 13.
-  - id: "line_197"
-    line_number: 197
-    status: completed
+  - id: "line_384"
+    line_number: 384
+    status: pending
     parallel_group: 999999
-    description: `prefers-reduced-motion` respected — animations disabled for users who prefer it
+    description: Footer has copyright notice: \"© DigiSoc 2026\" at the bottom
     indent_level: 0
     raw_marker: 14.
-  - id: "line_198"
-    line_number: 198
-    status: completed
+  - id: "line_385"
+    line_number: 385
+    status: pending
+    parallel_group: 999999
+    description: Floating shapes burst animation plays on first page load
+    indent_level: 0
+    raw_marker: 15.
+  - id: "line_386"
+    line_number: 386
+    status: pending
+    parallel_group: 999999
+    description: Mouse star/sparkle trail follows cursor on desktop
+    indent_level: 0
+    raw_marker: 16.
+  - id: "line_387"
+    line_number: 387
+    status: pending
+    parallel_group: 999999
+    description: Entry stagger animation on page content (navbar slides down, hero fades up)
+    indent_level: 0
+    raw_marker: 17.
+  - id: "line_388"
+    line_number: 388
+    status: pending
+    parallel_group: 999999
+    description: Existing animations preserved (MouseGlow, card tilt, magnetic buttons, scroll reveal, star field, floating orbs) and adjusted for both themes
+    indent_level: 0
+    raw_marker: 18.
+  - id: "line_389"
+    line_number: 389
+    status: pending
+    parallel_group: 999999
+    description: Site is fully responsive (mobile 375px+ through desktop)
+    indent_level: 0
+    raw_marker: 19.
+  - id: "line_390"
+    line_number: 390
+    status: pending
+    parallel_group: 999999
+    description: `prefers-reduced-motion` respected
+    indent_level: 0
+    raw_marker: 20.
+  - id: "line_391"
+    line_number: 391
+    status: pending
     parallel_group: 999999
     description: `npm run build` succeeds with no TypeScript errors
     indent_level: 0
-    raw_marker: 15.
-  - id: "line_199"
-    line_number: 199
-    status: completed
+    raw_marker: 21.
+  - id: "line_392"
+    line_number: 392
+    status: pending
     parallel_group: 999999
-    description: No `any` types used in new code
+    description: No `any` types in new code
     indent_level: 0
-    raw_marker: 16.
-  - id: "line_200"
-    line_number: 200
-    status: completed
-    parallel_group: 999999
-    description: Site remains fully responsive on mobile
-    indent_level: 0
-    raw_marker: 17.
+    raw_marker: 22.
