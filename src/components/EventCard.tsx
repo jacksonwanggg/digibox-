@@ -16,8 +16,14 @@ export default function EventCard({ event, delay = 0, past = false }: EventCardP
     year: "numeric",
   });
 
+  const handleCardClick = () => {
+    window.open(event.instagramUrl, "_blank", "noopener,noreferrer");
+  };
+
   return (
     <AnimatedCard className={`event-card ${past ? "event-card-past" : ""}`} delay={delay}>
+      {/* biome-ignore lint/a11y/useKeyWithClickEvents: card is supplementary to inner link */}
+      <div className="event-card-link" onClick={handleCardClick} role="link" tabIndex={-1}>
       {event.image ? (
         <img
           src={event.image}
@@ -62,6 +68,7 @@ export default function EventCard({ event, delay = 0, past = false }: EventCardP
           <line x1="10" y1="14" x2="21" y2="3" />
         </svg>
       </a>
+      </div>
     </AnimatedCard>
   );
 }

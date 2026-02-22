@@ -14,6 +14,7 @@ const NAV_ITEMS = [
   { path: "/about", label: "About" },
   { path: "/events", label: "Events" },
   { path: "/team", label: "Team" },
+  { path: "/sponsors", label: "Sponsors" },
   { path: "/contact", label: "Join Us" },
 ];
 

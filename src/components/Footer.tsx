@@ -61,7 +61,7 @@ export default function Footer() {
               <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer">
                 Facebook
               </a>
-              <a href="mailto:digisoc@unsw.edu.au">Email Us</a>
+              <a href="mailto:unswdigitalsociety@gmail.com">Email Us</a>
               <a href={RUBRIC_URL} target="_blank" rel="noopener noreferrer">
                 <img src={`${import.meta.env.BASE_URL}rubric logo.png`} alt="" width="20" height="20" />
                 Find Us on Rubric

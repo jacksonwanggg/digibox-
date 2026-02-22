@@ -111,7 +111,7 @@ export default function Contact() {
                   </div>
                 </a>
                 <a
-                  href="mailto:digisoc@unsw.edu.au"
+                  href="mailto:unswdigitalsociety@gmail.com"
                   className="contact-link-item"
                 >
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -121,7 +121,7 @@ export default function Contact() {
                   <div>
                     <strong>Email</strong>
                     <br />
-                    digisoc@unsw.edu.au
+                    unswdigitalsociety@gmail.com
                   </div>
                 </a>
               </div>
