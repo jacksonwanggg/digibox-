@@ -1,0 +1,79 @@
+# Ralph Task Cache
+# Auto-generated from RALPH_TASK.md
+# DO NOT EDIT - regenerated on task file change
+
+source_file: RALPH_TASK.md
+source_mtime: 1771735320
+generated_at: 2026-02-22T04:44:37Z
+
+tasks:
+  - id: "line_193"
+    line_number: 193
+    status: pending
+    parallel_group: 999999
+    description: `npm run build` succeeds with no TypeScript errors
+    indent_level: 0
+    raw_marker: 1.
+  - id: "line_194"
+    line_number: 194
+    status: pending
+    parallel_group: 999999
+    description: All routes render correctly
+    indent_level: 0
+    raw_marker: 2.
+  - id: "line_195"
+    line_number: 195
+    status: pending
+    parallel_group: 999999
+    description: Site is fully responsive on mobile
+    indent_level: 0
+    raw_marker: 3.
+  - id: "line_196"
+    line_number: 196
+    status: pending
+    parallel_group: 999999
+    description: Social links are visible and clickable
+    indent_level: 0
+    raw_marker: 4.
+  - id: "line_197"
+    line_number: 197
+    status: pending
+    parallel_group: 999999
+    description: Events are rendered from typed mock data
+    indent_level: 0
+    raw_marker: 5.
+  - id: "line_198"
+    line_number: 198
+    status: pending
+    parallel_group: 999999
+    description: Team members render from typed mock data
+    indent_level: 0
+    raw_marker: 6.
+  - id: "line_199"
+    line_number: 199
+    status: pending
+    parallel_group: 999999
+    description: No `any` types used
+    indent_level: 0
+    raw_marker: 7.
+  - id: "line_200"
+    line_number: 200
+    status: pending
+    parallel_group: 999999
+    description: Clean, reusable component structure
+    indent_level: 0
+    raw_marker: 8.
+  - id: "line_201"
+    line_number: 201
+    status: pending
+    parallel_group: 999999
+    description: Modern, polished UI aesthetic
+    indent_level: 0
+    raw_marker: 9.
+  - id: "line_202"
+    line_number: 202
+    status: pending
+    parallel_group: 999999
+    description: Layout does not break on small screens
+    indent_level: 0
+    raw_marker: 10.
