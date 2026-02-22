@@ -7,7 +7,7 @@ interface ExecCarouselProps {
 
 export default function ExecCarousel({ members }: ExecCarouselProps) {
   const trackRef = useRef<HTMLDivElement>(null);
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [, setActiveIndex] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
   const dragState = useRef({ startX: 0, scrollLeft: 0, hasMoved: false });
 
@@ -32,11 +32,6 @@ export default function ExecCarousel({ members }: ExecCarouselProps) {
     if (!trackRef.current) return;
     const scrollAmount = direction === "left" ? -cardWidth : cardWidth;
     trackRef.current.scrollBy({ left: scrollAmount, behavior: "smooth" });
-  }, [cardWidth]);
-
-  const scrollToDot = useCallback((index: number) => {
-    if (!trackRef.current) return;
-    trackRef.current.scrollTo({ left: index * cardWidth, behavior: "smooth" });
   }, [cardWidth]);
 
   const handleMouseDown = useCallback((e: React.MouseEvent) => {
