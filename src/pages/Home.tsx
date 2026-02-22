@@ -11,7 +11,11 @@ import { events } from "../data/events";
 import { team } from "../data/team";
 
 export default function Home() {
-  const featuredEvents = events.slice(0, 3);
+  const today = new Date().toISOString().split("T")[0];
+  const featuredEvents = events
+    .filter((e) => e.date >= today)
+    .sort((a, b) => a.date.localeCompare(b.date))
+    .slice(0, 3);
 
   return (
     <>

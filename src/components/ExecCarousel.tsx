@@ -106,16 +106,6 @@ export default function ExecCarousel({ members }: ExecCarouselProps) {
         </svg>
       </button>
 
-      <div className="exec-carousel-dots">
-        {members.map((_, i) => (
-          <button
-            key={i}
-            className={`exec-carousel-dot ${i === activeIndex ? "active" : ""}`}
-            onClick={() => scrollToDot(i)}
-            aria-label={`Go to slide ${i + 1}`}
-          />
-        ))}
-      </div>
     </div>
   );
 }

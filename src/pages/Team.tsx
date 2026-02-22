@@ -1,5 +1,4 @@
 import ExecCarousel from "../components/ExecCarousel";
-import ImagePlaceholder from "../components/ImagePlaceholder";
 import ScrollReveal from "../components/ScrollReveal";
 import { team } from "../data/team";
 
@@ -32,10 +31,14 @@ export default function Team() {
               <h2 className="section-title" style={{ marginBottom: "2rem" }}>
                 About the <span className="gradient-text">Team</span>
               </h2>
-              <ImagePlaceholder
-                width="100%"
-                height="300px"
-                label="Team Group Photo"
+              <img
+                src="/execs.png"
+                alt="Team Group Photo"
+                style={{
+                  width: "100%",
+                  borderRadius: "1rem",
+                  objectFit: "cover",
+                }}
               />
             </div>
           </ScrollReveal>

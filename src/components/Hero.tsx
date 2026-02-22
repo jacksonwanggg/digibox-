@@ -53,14 +53,7 @@ export default function Hero() {
       onMouseMove={handleMouseMove}
     >
       <div className="hero-photo-bg">
-        <div className="photo-placeholder-inner">
-          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" opacity="0.4">
-            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-            <circle cx="8.5" cy="8.5" r="1.5" />
-            <polyline points="21 15 16 10 5 21" />
-          </svg>
-          <span>DigiSoc Group Photo</span>
-        </div>
+        <img src="/groupPhoto.png" alt="DigiSoc Group Photo" />
       </div>
       <div className="hero-overlay" />
 
@@ -69,8 +62,6 @@ export default function Hero() {
       <div className="hero-grid" />
 
       <div className={`container hero-content ${stagger ? "hero-stagger" : ""}`}>
-        <img src="/digisocLogo.jpeg" alt="DigiSoc Logo" className="hero-logo" />
-        <span className="hero-badge">UNSW Digital Society</span>
         <h1>
           Empowering the Next Generation of{" "}
           <span className="gradient-text">Digital Leaders</span>
