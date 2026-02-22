@@ -1,6 +1,7 @@
 import { InstagramIcon, LinkedInIcon, FacebookIcon } from "../components/SocialIcons";
 import ScrollReveal from "../components/ScrollReveal";
 import FloatingOrbs from "../components/FloatingOrbs";
+import { useDocumentMeta } from "../hooks/useDocumentMeta";
 
 const SOCIAL_LINKS = {
   instagram: "https://www.instagram.com/unswdigisoc/?hl=en",
@@ -11,6 +12,11 @@ const SOCIAL_LINKS = {
 const RUBRIC_URL = "https://campus.hellorubric.com/?s=6334";
 
 export default function Contact() {
+  useDocumentMeta({
+    title: "Join DigiSoc — Get Involved with UNSW Digital Society",
+    description: "Join DigiSoc (UNSW Digital Society) — become a member of UNSW's premier digital community. Follow UNSW DigiSoc on Instagram (@unswdigisoc), LinkedIn, and Facebook. Connect with DigiSoc UNSW, attend events, workshops, hackathons, and build your digital skills at UNSW Sydney.",
+  });
+
   return (
     <>
       <section className="page-header">
@@ -64,7 +70,7 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="contact-link-item"
                 >
-                  <img src={`${import.meta.env.BASE_URL}rubric logo.png`} alt="" width="28" height="28" style={{ objectFit: "contain" }} />
+                  <img src={`${import.meta.env.BASE_URL}rubric-logo.png`} alt="" width="28" height="28" style={{ objectFit: "contain" }} />
                   <div>
                     <strong>Find Us on Rubric</strong>
                     <br />

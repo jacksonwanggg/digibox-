@@ -11,7 +11,7 @@ export const sponsors: Sponsor[] = [
   {
     id: "rubric",
     name: "Rubric",
-    logo: "rubric logo.png",
+    logo: "rubric-logo.png",
     url: "https://campus.hellorubric.com/?s=6334",
     tier: "gold",
     description:

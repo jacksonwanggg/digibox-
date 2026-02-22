@@ -3,6 +3,7 @@ import ScrollReveal from "../components/ScrollReveal";
 import AnimatedCard from "../components/AnimatedCard";
 import FloatingOrbs from "../components/FloatingOrbs";
 import MagneticButton from "../components/MagneticButton";
+import { useDocumentMeta } from "../hooks/useDocumentMeta";
 import { sponsors } from "../data/sponsors";
 import type { Sponsor } from "../data/sponsors";
 
@@ -13,6 +14,11 @@ const TIER_LABELS: Record<Sponsor["tier"], string> = {
 };
 
 export default function Sponsors() {
+  useDocumentMeta({
+    title: "DigiSoc Sponsors — UNSW DigiSoc Industry Partners",
+    description: "UNSW DigiSoc sponsors and industry partners. DigiSoc (UNSW Digital Society) partners with leading organisations to support UNSW students in digital skills, technology, design, and innovation. Sponsor DigiSoc UNSW — reach hundreds of students passionate about digital.",
+  });
+
   return (
     <>
       <section className="page-header">

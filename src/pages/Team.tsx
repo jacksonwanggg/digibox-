@@ -1,8 +1,13 @@
 import ExecCarousel from "../components/ExecCarousel";
 import ScrollReveal from "../components/ScrollReveal";
+import { useDocumentMeta } from "../hooks/useDocumentMeta";
 import { team } from "../data/team";
 
 export default function Team() {
+  useDocumentMeta({
+    title: "DigiSoc Team — UNSW DigiSoc Executives & Leadership",
+    description: "Meet the UNSW DigiSoc executive team. The passionate students leading DigiSoc (UNSW Digital Society) — driving workshops, hackathons, events, and community initiatives. DigiSoc UNSW team — the people behind UNSW's premier digital society.",
+  });
   return (
     <>
       <section className="page-header">

@@ -7,10 +7,15 @@ import ScrollReveal from "../components/ScrollReveal";
 import AnimatedCard from "../components/AnimatedCard";
 import FloatingOrbs from "../components/FloatingOrbs";
 import MagneticButton from "../components/MagneticButton";
+import { useDocumentMeta } from "../hooks/useDocumentMeta";
 import { events } from "../data/events";
 import { team } from "../data/team";
 
 export default function Home() {
+  useDocumentMeta({
+    title: "",
+    description: "DigiSoc — UNSW Digital Society (UNSW DigiSoc) is UNSW Sydney's premier student society for digital skills, technology, design, and innovation. DigiSoc runs workshops, hackathons, industry panels, networking events, and socials. Join DigiSoc at UNSW to learn web development, UI/UX design, data analytics, cloud computing, and digital marketing.",
+  });
   const today = new Date().toISOString().split("T")[0];
   const featuredEvents = events
     .filter((e) => e.date >= today)

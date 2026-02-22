@@ -1,8 +1,13 @@
 import EventCard from "../components/EventCard";
 import ScrollReveal from "../components/ScrollReveal";
+import { useDocumentMeta } from "../hooks/useDocumentMeta";
 import { events } from "../data/events";
 
 export default function Events() {
+  useDocumentMeta({
+    title: "DigiSoc Events — UNSW Workshops, Hackathons & Socials",
+    description: "Browse upcoming and past DigiSoc events at UNSW Sydney. UNSW DigiSoc hosts workshops, hackathons, industry panels, networking nights, and social events for UNSW students passionate about digital skills, technology, design, and innovation. DigiSoc UNSW events — learn, connect, and grow.",
+  });
   const today = new Date().toISOString().split("T")[0];
   const upcoming = events
     .filter((e) => e.date >= today)

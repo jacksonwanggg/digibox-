@@ -78,7 +78,7 @@ export default function Navbar({ theme, onToggleTheme }: NavbarProps) {
                 <FacebookIcon size={18} />
               </a>
               <a href={SOCIAL_LINKS.rubric} target="_blank" rel="noopener noreferrer" aria-label="Rubric" className="navbar-rubric">
-                <img src={`${import.meta.env.BASE_URL}rubric logo.png`} alt="Rubric" width="20" height="20" />
+                <img src={`${import.meta.env.BASE_URL}rubric-logo.png`} alt="Rubric" width="20" height="20" />
               </a>
             </div>
             <ThemeToggle theme={theme} onToggle={onToggleTheme} />
@@ -126,7 +126,7 @@ export default function Navbar({ theme, onToggleTheme }: NavbarProps) {
             <FacebookIcon />
           </a>
           <a href={SOCIAL_LINKS.rubric} target="_blank" rel="noopener noreferrer" aria-label="Rubric">
-            <img src={`${import.meta.env.BASE_URL}rubric logo.png`} alt="Rubric" width="24" height="24" />
+            <img src={`${import.meta.env.BASE_URL}rubric-logo.png`} alt="Rubric" width="24" height="24" />
           </a>
         </div>
       </div>

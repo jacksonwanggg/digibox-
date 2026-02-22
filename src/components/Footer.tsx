@@ -45,6 +45,7 @@ export default function Footer() {
               <Link to="/about">About</Link>
               <Link to="/events">Events</Link>
               <Link to="/team">Team</Link>
+              <Link to="/sponsors">Sponsors</Link>
               <Link to="/contact">Join Us</Link>
             </div>
           </div>
@@ -63,7 +64,7 @@ export default function Footer() {
               </a>
               <a href="mailto:unswdigitalsociety@gmail.com">Email Us</a>
               <a href={RUBRIC_URL} target="_blank" rel="noopener noreferrer">
-                <img src={`${import.meta.env.BASE_URL}rubric logo.png`} alt="" width="20" height="20" />
+                <img src={`${import.meta.env.BASE_URL}rubric-logo.png`} alt="" width="20" height="20" />
                 Find Us on Rubric
               </a>
             </div>

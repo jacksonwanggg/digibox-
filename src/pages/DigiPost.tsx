@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ScrollReveal from "../components/ScrollReveal";
 import EventCard from "../components/EventCard";
+import { useDocumentMeta } from "../hooks/useDocumentMeta";
 import type { DigiEvent } from "../data/events";
 
 const FIELDS = [
@@ -16,6 +17,11 @@ const FIELDS = [
 type FormData = Record<string, string>;
 
 export default function DigiPost() {
+  useDocumentMeta({
+    title: "DigiPost — DigiSoc Event Generator Tool",
+    description: "DigiPost — DigiSoc's internal event posting tool. Generate formatted event entries for the UNSW Digital Society (DigiSoc UNSW) website. Create and preview DigiSoc events.",
+  });
+
   const [form, setForm] = useState<FormData>({
     title: "",
     description: "",

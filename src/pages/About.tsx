@@ -3,8 +3,13 @@ import ScrollReveal from "../components/ScrollReveal";
 import AnimatedCard from "../components/AnimatedCard";
 import FloatingOrbs from "../components/FloatingOrbs";
 import MagneticButton from "../components/MagneticButton";
+import { useDocumentMeta } from "../hooks/useDocumentMeta";
 
 export default function About() {
+  useDocumentMeta({
+    title: "About DigiSoc — UNSW Digital Society Mission & Values",
+    description: "Learn about DigiSoc (UNSW Digital Society). UNSW DigiSoc empowers students with digital skills through workshops, hackathons, and industry events. Our values: accessibility, community, innovation, and empowerment. DigiSoc UNSW — bridging university education and the digital industry at UNSW Sydney.",
+  });
   return (
     <>
       <section className="page-header">
