@@ -1063,6 +1063,49 @@ p {
   margin-right: auto;
 }
 
+/* 404 Not Found */
+.not-found-page {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.not-found-title {
+  font-size: clamp(4rem, 12vw, 8rem);
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}
+
+.not-found-message {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.not-found-sub {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin: 0 0 1.5rem;
+  max-width: 400px;
+}
+
+.not-found-actions {
+  margin-top: 0.5rem;
+}
+
 /* About page */
 .about-content {
   max-width: 800px;
