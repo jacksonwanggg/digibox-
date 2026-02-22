@@ -744,6 +744,19 @@ p {
   opacity: 0.8;
 }
 
+.exec-linkedin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.75rem;
+  color: var(--text-muted);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.exec-linkedin:hover {
+  color: #0A66C2;
+  transform: scale(1.15);
+}
+
 .exec-carousel-arrow {
   position: absolute;
   top: 50%;
