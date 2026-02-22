@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import routeHtmlPlugin from './vite-plugin-route-html'
 
-// https://vite.dev/config/
 export default defineConfig({
   base: '/',
-  plugins: [react()],
+  plugins: [react(), routeHtmlPlugin()],
 })
