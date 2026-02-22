@@ -368,28 +368,28 @@ src/
 
 ## ✅ Success Criteria
 
-1. [ ] Light mode is the default — pure white backgrounds with `#6C5CE7` purple accents
-2. [ ] Dark mode toggle works — stored in localStorage, toggles `data-theme` on `<html>`
-3. [ ] All CSS refactored to use theme-aware CSS variables (no hardcoded colors)
-4. [ ] Smooth 300ms transition between light and dark mode
-5. [ ] Hero section shows full-width group photo placeholder with overlay text and CTAs
-6. [ ] DigiSoc logo (`digisocLogo.jpeg`) used in navbar, footer, and as favicon
-7. [ ] Rubric logo (`rubric logo.png`) displayed as icon next to all Rubric links (hero, events, footer, contact)
-8. [ ] `ImagePlaceholder` component used throughout for future photo slots
-9. [ ] Home page has a gallery section with 4–6 photo placeholders
-10. [ ] Exec carousel is horizontally swipeable (drag on desktop, touch on mobile)
-11. [ ] Exec carousel has scroll snap, arrow buttons (desktop), and position indicator
-12. [ ] Team data expanded to 10 executives
-13. [ ] Rubric link (`https://campus.hellorubric.com/?s=6334`) in hero, events, footer, and contact page
-14. [ ] Footer has copyright notice: "© DigiSoc 2026" at the bottom
-15. [ ] Floating shapes burst animation plays on first page load
-16. [ ] Mouse star/sparkle trail follows cursor on desktop
-17. [ ] Entry stagger animation on page content (navbar slides down, hero fades up)
-18. [ ] Existing animations preserved (MouseGlow, card tilt, magnetic buttons, scroll reveal, star field, floating orbs) and adjusted for both themes
-19. [ ] Site is fully responsive (mobile 375px+ through desktop)
-20. [ ] `prefers-reduced-motion` respected
-21. [ ] `npm run build` succeeds with no TypeScript errors
-22. [ ] No `any` types in new code
+1. [x] Light mode is the default — pure white backgrounds with `#6C5CE7` purple accents
+2. [x] Dark mode toggle works — stored in localStorage, toggles `data-theme` on `<html>`
+3. [x] All CSS refactored to use theme-aware CSS variables (no hardcoded colors)
+4. [x] Smooth 300ms transition between light and dark mode
+5. [x] Hero section shows full-width group photo placeholder with overlay text and CTAs
+6. [x] DigiSoc logo (`digisocLogo.jpeg`) used in navbar, footer, and as favicon
+7. [x] Rubric logo (`rubric logo.png`) displayed as icon next to all Rubric links (hero, events, footer, contact)
+8. [x] `ImagePlaceholder` component used throughout for future photo slots
+9. [x] Home page has a gallery section with 4–6 photo placeholders
+10. [x] Exec carousel is horizontally swipeable (drag on desktop, touch on mobile)
+11. [x] Exec carousel has scroll snap, arrow buttons (desktop), and position indicator
+12. [x] Team data expanded to 10 executives
+13. [x] Rubric link (`https://campus.hellorubric.com/?s=6334`) in hero, events, footer, and contact page
+14. [x] Footer has copyright notice: "© DigiSoc 2026" at the bottom
+15. [x] Floating shapes burst animation plays on first page load
+16. [x] Mouse star/sparkle trail follows cursor on desktop
+17. [x] Entry stagger animation on page content (navbar slides down, hero fades up)
+18. [x] Existing animations preserved (MouseGlow, card tilt, magnetic buttons, scroll reveal, star field, floating orbs) and adjusted for both themes
+19. [x] Site is fully responsive (mobile 375px+ through desktop)
+20. [x] `prefers-reduced-motion` respected
+21. [x] `npm run build` succeeds with no TypeScript errors
+22. [x] No `any` types in new code
 
 ---
 
