@@ -3,7 +3,8 @@ import ScrollReveal from "../components/ScrollReveal";
 import AnimatedCard from "../components/AnimatedCard";
 import FloatingOrbs from "../components/FloatingOrbs";
 import MagneticButton from "../components/MagneticButton";
-import { sponsors, Sponsor } from "../data/sponsors";
+import { sponsors } from "../data/sponsors";
+import type { Sponsor } from "../data/sponsors";
 
 const TIER_LABELS: Record<Sponsor["tier"], string> = {
   gold: "Gold Partner",
