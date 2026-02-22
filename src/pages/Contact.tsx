@@ -64,7 +64,7 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="contact-link-item"
                 >
-                  <img src="/rubric logo.png" alt="" width="28" height="28" style={{ objectFit: "contain" }} />
+                  <img src={`${import.meta.env.BASE_URL}rubric logo.png`} alt="" width="28" height="28" style={{ objectFit: "contain" }} />
                   <div>
                     <strong>Find Us on Rubric</strong>
                     <br />

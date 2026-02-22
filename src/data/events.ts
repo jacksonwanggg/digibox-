@@ -19,7 +19,7 @@ export const events: DigiEvent[] = [
     time: "11:30 AM - 1:30 PM",
     location: "Library Walkway",
     instagramUrl: "https://www.instagram.com/p/DU4UngfDjwA/?hl=en",
-    image: "/events/plushNpunch.png",
+    image: `${import.meta.env.BASE_URL}events/plushNpunch.png`,
   },
   {
     id: 8,
@@ -30,6 +30,6 @@ export const events: DigiEvent[] = [
     time: "10:00 AM - 4:00 PM",
     location: "UNSW Alumni Lawn",
     instagramUrl: "https://www.instagram.com/p/DUhpWybkdVu/?hl=en",
-    image: "/events/oweek2026.png",
+    image: `${import.meta.env.BASE_URL}events/oweek2026.png`,
   },
 ];

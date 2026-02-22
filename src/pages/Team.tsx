@@ -32,7 +32,7 @@ export default function Team() {
                 About the <span className="gradient-text">Team</span>
               </h2>
               <img
-                src="/execs.png"
+                src={`${import.meta.env.BASE_URL}execs.png`}
                 alt="Team Group Photo"
                 style={{
                   width: "100%",

@@ -790,6 +790,10 @@ p {
   align-self: flex-start;
   padding: 0.65rem 1.5rem;
   font-size: 0.85rem;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  transform-style: flat;
 }
 
 .event-card-image {

@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <div className="footer-brand-logo">
-              <img src="/digisocLogo.jpeg" alt="DigiSoc" />
+              <img src={`${import.meta.env.BASE_URL}digisocLogo.jpeg`} alt="DigiSoc" />
               <h3>
                 UNSW <span className="gradient-text">DigiSoc</span>
               </h3>
@@ -63,7 +63,7 @@ export default function Footer() {
               </a>
               <a href="mailto:digisoc@unsw.edu.au">Email Us</a>
               <a href={RUBRIC_URL} target="_blank" rel="noopener noreferrer">
-                <img src="/rubric logo.png" alt="" width="20" height="20" />
+                <img src={`${import.meta.env.BASE_URL}rubric logo.png`} alt="" width="20" height="20" />
                 Find Us on Rubric
               </a>
             </div>

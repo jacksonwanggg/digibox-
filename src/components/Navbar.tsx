@@ -48,7 +48,7 @@ export default function Navbar({ theme, onToggleTheme }: NavbarProps) {
       <nav className={`navbar ${scrolled ? "scrolled" : ""} ${stagger ? "navbar-stagger" : ""}`}>
         <div className="container navbar-inner">
           <Link to="/" className="navbar-logo">
-            <img src="/digisocLogo.jpeg" alt="DigiSoc" className="logo-icon" />
+            <img src={`${import.meta.env.BASE_URL}digisocLogo.jpeg`} alt="DigiSoc" className="logo-icon" />
             DigiSoc
           </Link>
 
