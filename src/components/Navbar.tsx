@@ -7,6 +7,7 @@ const SOCIAL_LINKS = {
   instagram: "https://www.instagram.com/unswdigisoc/?hl=en",
   linkedin: "https://www.linkedin.com/company/unsw-digisoc/?originalSubdomain=au",
   facebook: "https://www.facebook.com/unswdigitalsociety/",
+  rubric: "https://campus.hellorubric.com/?s=6334",
 };
 
 const NAV_ITEMS = [
@@ -76,6 +77,9 @@ export default function Navbar({ theme, onToggleTheme }: NavbarProps) {
               <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <FacebookIcon size={18} />
               </a>
+              <a href={SOCIAL_LINKS.rubric} target="_blank" rel="noopener noreferrer" aria-label="Rubric" className="navbar-rubric">
+                <img src={`${import.meta.env.BASE_URL}rubric logo.png`} alt="Rubric" width="20" height="20" />
+              </a>
             </div>
             <ThemeToggle theme={theme} onToggle={onToggleTheme} />
           </div>
@@ -120,6 +124,9 @@ export default function Navbar({ theme, onToggleTheme }: NavbarProps) {
           </a>
           <a href={SOCIAL_LINKS.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
             <FacebookIcon />
+          </a>
+          <a href={SOCIAL_LINKS.rubric} target="_blank" rel="noopener noreferrer" aria-label="Rubric">
+            <img src={`${import.meta.env.BASE_URL}rubric logo.png`} alt="Rubric" width="24" height="24" />
           </a>
         </div>
       </div>

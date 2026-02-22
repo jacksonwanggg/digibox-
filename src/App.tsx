@@ -12,6 +12,7 @@ import Events from "./pages/Events";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import Sponsors from "./pages/Sponsors";
+import DigiPost from "./pages/DigiPost";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -38,6 +39,7 @@ export default function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/team" element={<Team />} />
           <Route path="/sponsors" element={<Sponsors />} />
+          <Route path="/digi-post" element={<DigiPost />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
