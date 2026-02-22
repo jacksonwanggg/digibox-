@@ -2,6 +2,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import MouseGlow from "./components/MouseGlow";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Events from "./pages/Events";
@@ -19,6 +20,7 @@ function ScrollToTop() {
 export default function App() {
   return (
     <>
+      <MouseGlow />
       <ScrollToTop />
       <Navbar />
       <main>

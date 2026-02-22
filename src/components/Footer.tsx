@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { InstagramIcon, LinkedInIcon, FacebookIcon } from "./SocialIcons";
+import StarField from "./StarField";
 
 const SOCIAL_LINKS = {
   instagram: "https://www.instagram.com/unswdigisoc/?hl=en",
@@ -11,6 +12,7 @@ const SOCIAL_LINKS = {
 export default function Footer() {
   return (
     <footer className="footer">
+      <StarField count={18} />
       <div className="container">
         <div className="footer-grid">
           <div className="footer-brand">

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { InstagramIcon, LinkedInIcon, FacebookIcon } from "./SocialIcons";
 
@@ -19,11 +19,20 @@ const NAV_ITEMS = [
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
-      <nav className="navbar">
+      <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
         <div className="container navbar-inner">
           <Link to="/" className="navbar-logo">
             <span className="logo-icon">D</span>

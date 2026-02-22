@@ -1,4 +1,6 @@
 import { InstagramIcon, LinkedInIcon, FacebookIcon } from "../components/SocialIcons";
+import ScrollReveal from "../components/ScrollReveal";
+import FloatingOrbs from "../components/FloatingOrbs";
 
 const SOCIAL_LINKS = {
   instagram: "https://www.instagram.com/unswdigisoc/?hl=en",
@@ -27,30 +29,32 @@ export default function Contact() {
       <section className="section">
         <div className="container">
           <div className="contact-grid">
-            <div className="contact-info">
-              <h3>Join the Community</h3>
-              <p>
-                Whether you&apos;re a first-year looking to explore digital or a
-                final-year ready to lead, DigiSoc has a place for you. Follow us
-                on socials, attend our events, and become part of UNSW&apos;s
-                premier digital community.
-              </p>
+            <ScrollReveal>
+              <div className="contact-info">
+                <h3>Join the Community</h3>
+                <p>
+                  Whether you&apos;re a first-year looking to explore digital or a
+                  final-year ready to lead, DigiSoc has a place for you. Follow us
+                  on socials, attend our events, and become part of UNSW&apos;s
+                  premier digital community.
+                </p>
 
-              <h3>How to Join</h3>
-              <p>
-                Membership is open to all UNSW students. Sign up through our
-                SpArc page during O-Week or any time during the semester. It&apos;s
-                free!
-              </p>
+                <h3>How to Join</h3>
+                <p>
+                  Membership is open to all UNSW students. Sign up through our
+                  SpArc page during O-Week or any time during the semester. It&apos;s
+                  free!
+                </p>
 
-              <h3>Get in Touch</h3>
-              <p>
-                Have a question, partnership idea, or just want to say hi? Reach
-                out through any of our channels.
-              </p>
-            </div>
+                <h3>Get in Touch</h3>
+                <p>
+                  Have a question, partnership idea, or just want to say hi? Reach
+                  out through any of our channels.
+                </p>
+              </div>
+            </ScrollReveal>
 
-            <div>
+            <ScrollReveal delay={200}>
               <div className="contact-links">
                 <a
                   href={SOCIAL_LINKS.instagram}
@@ -115,20 +119,23 @@ export default function Contact() {
                   </div>
                 </a>
               </div>
-            </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
 
       <section className="section cta-section">
+        <FloatingOrbs variant="cta" />
         <div className="container">
-          <h2>
-            Let&apos;s build the{" "}
-            <span className="gradient-text">digital future</span> together.
-          </h2>
-          <p>
-            Follow us, attend events, and become part of something incredible.
-          </p>
+          <ScrollReveal>
+            <h2>
+              Let&apos;s build the{" "}
+              <span className="gradient-text gradient-text-pulse">digital future</span> together.
+            </h2>
+            <p>
+              Follow us, attend events, and become part of something incredible.
+            </p>
+          </ScrollReveal>
         </div>
       </section>
     </>

@@ -1,4 +1,5 @@
 import EventCard from "../components/EventCard";
+import ScrollReveal from "../components/ScrollReveal";
 import { events } from "../data/events";
 
 export default function Events() {
@@ -22,13 +23,17 @@ export default function Events() {
 
       <section className="section">
         <div className="container">
-          <h2 className="section-title">Upcoming Events</h2>
-          <p className="section-subtitle">
-            Check out what we have planned for this semester.
-          </p>
+          <ScrollReveal>
+            <h2 className="section-title">Upcoming Events</h2>
+            <p className="section-subtitle">
+              Check out what we have planned for this semester.
+            </p>
+          </ScrollReveal>
           <div className="grid-2">
-            {events.map((event) => (
-              <EventCard key={event.id} event={event} />
+            {events.map((event, i) => (
+              <ScrollReveal key={event.id} delay={i * 100}>
+                <EventCard event={event} />
+              </ScrollReveal>
             ))}
           </div>
         </div>

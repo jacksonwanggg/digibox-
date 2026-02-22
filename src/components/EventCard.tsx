@@ -1,10 +1,12 @@
 import type { DigiEvent } from "../data/events";
+import AnimatedCard from "./AnimatedCard";
 
 interface EventCardProps {
   event: DigiEvent;
+  delay?: number;
 }
 
-export default function EventCard({ event }: EventCardProps) {
+export default function EventCard({ event, delay = 0 }: EventCardProps) {
   const formattedDate = new Date(event.date).toLocaleDateString("en-AU", {
     weekday: "short",
     day: "numeric",
@@ -13,7 +15,7 @@ export default function EventCard({ event }: EventCardProps) {
   });
 
   return (
-    <div className="card event-card">
+    <AnimatedCard className="event-card" delay={delay}>
       <span className="event-card-date">
         <svg
           width="16"
@@ -38,6 +40,6 @@ export default function EventCard({ event }: EventCardProps) {
       <a href={event.registrationUrl} className="btn btn-primary">
         Register
       </a>
-    </div>
+    </AnimatedCard>
   );
 }
